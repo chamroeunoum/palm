@@ -5,7 +5,7 @@
  */
 define("_EXE",1);
 date_default_timezone_set("Asia/Phnom_Penh");
-if(!defined("DS"))define("DS",DIRECTORY_SEPARATOR);
+if(!defined("DS"))define("DS","/");
 if(!defined("SERVER"))define("SERVER",(isset($_SERVER["REQUEST_SCHEME"])?$_SERVER["REQUEST_SCHEME"]:"http")."://".$_SERVER["HTTP_HOST"]);
 if(!defined("REAL_PATH"))define("REAL_PATH",dirname(__FILE__).DS);
 if(!defined("ROOT"))define("ROOT",str_replace(array("index.php"),"",dirname(dirname($_SERVER["SCRIPT_NAME"])) ));
