@@ -2,7 +2,6 @@
 	defined("_EXE") or die ("CORE VARIABLE IS NOT DEFINED.");
 	class Session {
 		public static function start(){
-			session_save_path( DATA_FOLDER . "tmp" . DS );
 			if ( !isset( $_SESSION ) ) session_start() ;
 		}
 		
