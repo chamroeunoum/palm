@@ -12,7 +12,7 @@
 			if($calledClass!=""){
 				$this->calledClass = $calledClass;
 				$this->cmpName=str_replace("Controller","",$this->calledClass);
-				$this->model=Basic::fileExist(APP_COMPONENT.$this->cmpName.DS.$this->cmpName."Model.php")?$this->loadModel($this->cmpName):null;
+				$this->model=Basic::fileExist(APP_COMPONENT.strtolower($this->cmpName).DS.$this->cmpName."Model.php")?$this->loadModel($this->cmpName):null;
 			}
 		}
 
