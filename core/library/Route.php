@@ -29,11 +29,11 @@
 				$this->service = $this->loadService(Basic::getMVCName($this->request->getService()));
 				if(method_exists($this->service,$this->request->getAction()))return true;
 				else{
-					include(CORE_APP."views/errors/service_not_found.asd");
+					include(CORE_APP."views/errors/service_not_found.pm");
 					die();
 				}
 			}else{
-				include(CORE_APP."views/errors/service_not_install.asd");
+				include(CORE_APP."views/errors/service_not_install.pm");
 				die();
 			}
 			// echo error page for not found service
